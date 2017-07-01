@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<!-- Command+backslash can mute code as a comment -->
+<!-- command + backslash autofills comments:  -->
+
+<head>
+	<title>My First Webpage</title>
+</head>
+<body>
+	<h1 id="top">This is my Main Header</h1>
+	<h2>This is my level 2 Heading</h2>
+	<h3>This is my Level 3 Heading</h3>
+	<h4>This is my level 4 Heading</h4>
+	<h5>This is my level 5 Heading</h5>
+	<h6>This is my level 6 heading</h6><hr>
+	<h2>Paragraph Text</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. <em>Excepteur sint occaecat cupidatat non
+	proident,</em> <strong>sunt in culpa qui officia deserunt</strong> mollit anim id est laborum.</p>
+	<b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b>
+	<br><br><<i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i><hr>
+	<h2>Bold & Italic</h2>
+	<p>You can <b>bold</b> a word in a sentence a nd make a word appear in <i>italic</i></p>
+	<p>You can <em>emphasize</em> and also <strong>strong</strong> text</p>
+	<br><hr>
+	
+	<h2>Unordered and Ordered List</h2>
+	<ul>
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+	</ul>
+	<ol>
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+	</ol>
+	<!-- Nested list example -->
+	<p>Days of Christmas</p>
+	<ol>
+		<li>On the first day of Christmas, my true love sent to me</li>
+		<ul>
+			<li>Partridge in a Pear Tree</li>
+		</ul>
+	</ol><br><hr>
+	<h2>Links</h2>
+	<!-- linking to website -->
+		<a href="http://codefor.asia/">Code for Asia Society</a><br>
+		<!-- linking within document using ID tag -->
+		<a href="#top">To the Top</a><br>
+		<!-- linking with image using img tag -->
+		<img src="http://appinventor.mit.edu/explore/sites/explore.appinventor.mit.edu/files/trainers-group.png"><br>
+		<!-- linking to local file by putting the file in the same file as the html file -->
+		<img src="Screenshot.png"><br><hr>
+	
+	<h2>Table</h2>
+	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>	
+		<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+	</table>
+	<table>	
+		
+		<tr>
+			<th scope="row">Mon</th>
+			<!-- The scope attribute specifies whether a header cell is a header for a column, row, or group of columns or rows -->
+			<td>1</td>
+		</tr>
+		<tr>	
+			<th scope="row">Tue</th>
+			<td>2</td>
+		</tr>
+		<tr>	
+			<th scope="row">Wed</th>
+			<td>3</td>
+		</tr>	
+	</table>
+	<table>
+		
+		<tr>
+			<th scope="row"></th>
+			<th>Mon</th>
+			<th>Tue</th>
+			<th>Wed</th>
+		</tr>
+		<tr>	
+			<th scope="row">Cookies Ate</th>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>	
+			<th scope="row">Donuts Ate</th>
+			<td>3</td>
+			<td colspan="2">2</td>
+			<!-- The colspan attribute defines the number of columns a cell should span -->
+		</tr>	
+	</table><br><hr>
+	
+	<h2>Forms</h2>
+	<form>
+		<p>Username:
+			<input type="text" name="Username" size="15" maxlength="10"></p>
+		<p>Password:
+		<input type="Password" name="Password" size="15" minlength="8"></p>
+		<p>Comments:
+			<textarea name="comments" cols="10" rows="5">Enter your comments...</textarea></p>	
+
+		<p> Please select your favourite genre: </p><br>
+			<input type="radio" name="genre" value="classical" checked="checked">classical
+			<input type="radio" name="genre" value="hiphop">hiphop
+			<input type="radio" name="genre" value="r&b">r&b
+
+		<p> What device do you listen to music on?</p>
+			<select name="devices">
+				<option value="ipod">iPod</option>
+				<option value="mobilephone">Mobile Phones</option>
+				<option value="computer">Computer</option>
+			</select>	
+
+		<p>Please select you commute:</p> <br>
+			<input type="checkbox" name="vehicle" value="motorbike" checked="checked">Motorbike <br>
+			<input type="checkbox" name="vehicle" value="car">Car <br>
+			<input type="checkbox" name="vehicle" value="subway">Subway <br>
+
+		<p>Please subscibe to our email: </p>
+			<input type="text" name="email" />
+			<input type="submit" name="subscribe" value="subscribe" />
+
+		<p>Birthday: </p>
+			<input type="date" name="Birthday" />
+
+		<p>Select your favorite color: </p>	
+			<input type="color" name="favcolor" />
+			<input type="button"   onclick="alert('Hello World')" value="Click Me!" />
+	</form>
+</body>
+</html>
